@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		/*#first {
+			width: 50%;
+			margin: auto;
+			height: 100px;
+			background: gold;
+		}
+		#second {
+			width: 50%;
+			margin: auto;
+			height: 100px;
+			background: salmon;
+			display: none;
+		}
+		#third {
+			width: 50%;
+			margin: auto;
+			height: 100px;
+			background: aqua;
+			display: none;
+		}*/
+		body {
+			background: black;
+		}
+		#field {
+			width: 372px;
+			height: 372px;
+			padding: 0px;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			margin-top: -180px;
+			margin-left: -180px; 
+		}
+		.but {
+			width: 100px;
+			height: 100px;
+			background: #333333;
+			border: 7px solid #222222;
+			border-bottom-color: #2e2e2e;
+			border-right-color: #2a2a2a;
+			border-top-color: #1e1e1e;
+			box-shadow: 0px 0px 8px #333333;
+			margin: 5px;
+			float: left;
+		}
+		.but:hover {
+			background: #3B0010;
+			border: 7px solid #2F0A14;
+			border-bottom-color: #6F1A31;
+			border-right-color: #6F0F28;
+			border-top-color: #2A000B;
+			box-shadow: 0px 0px 8px #333333;
+		}
+		.but:hover {
+
+		}
+	</style>
+</head>
+<body>
+	<!--<div id="first">open</div>
+	<div id="second">second</div>
+	<div id="third">third</div>-->
+<div id="field">
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+	<div class="but"></div>
+</div>
+<script type="text/javascript">
+	(function(){
+		
+		
+
+		$('#first').click(function(){
+			var oper=$('#first').html();
+			console.log(oper);
+			if (oper=='open') {
+				$('#third').show(1000); 
+				console.log(oper); 
+				$('#first').text('close');}
+			else {
+				$('#third').hide(1000); 
+				$('#first').text('open');}
+
+		});
+
+
+
+		
+
+
+
+
+
+	})();
+</script>
+
+</body>
+</html>

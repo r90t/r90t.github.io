@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>about_us</title>
+	<meta charset="utf-8"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div id="upper_header_line">
+		<ul id="upper_header_menu">
+			<li><img src="img/1.jpg" alt="img1"/></li>
+			<li><img src="img/2.jpg" alt="img2"/></li>
+			<li><img src="img/3.jpg" alt="img3"/></li>
+			<li><img src="img/4.jpg" alt="img4"/></li>
+			<li><img src="img/5.jpg" alt="img5"/></li>
+			<li><img src="img/6.jpg" alt="img6"/></li>
+		</ul>
+		</div>
+		<div id="lower_header_line">
+			<ul id="lower_header_menu">
+				<li><a href="home.html" target="_self">Home</a></li>
+				<li><a href="information.html" target="_self">Information</a></li>
+				<li><a href="offer.html" target="_self">Offer</a></li>
+				<li><a href="#.html" target="_self">About Us</a></li>
+			</ul>
+		</div>
+	</header>	
+			
+	<div id="left_column">
+			<div id="menu_square">MENU</div>
+			<div class="button1b"><a href="#">1</a></div>
+			<div class="button2b"><a href="#">1</a></div>
+			<div class="button3b"><a href="#">1</a></div>
+			<div class="button4b"><a href="#">1</a></div>
+			<div class="button5b"><a href="#">1</a></div>
+			<div class="button6b"><a href="#">1</a></div>
+			<div class="button7b"><a href="#">1</a></div>
+			<div class="button8b"><a href="#">1</a></div>
+			<div class="button9b"><a href="#">1</a></div>
+			<div class="button10b"><a href="#">1</a></div>
+	</div>
+
+
+	<div id="main">
+			<div id="list">
+				<div id="list_line"><h1>Finally about us</h1></div>
+				<div id="content">
+					<div id="text_about_us">
+						<h2>Lorem ipsum dolor sit</h2>
+						<p>At vero eos et <b>accusamus et iusto</b> odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui <b>officia deserunt</b> mollitia animi, id est laborum et dolorum fuga.</p>
+						<ul><span><b>Nemo enim ipsam voluptatem:</b></span>
+							<li>aspernatur aut odit</li>
+							<li>consequuntur magni</li>
+							<li>iste natus error</li>
+							<li>quidem rerum facilis</li>
+							<li>ut et voluptates</li>
+							<li>omnis voluptas assumenda</li>
+						</ul>
+						<p>Temporibus <b>autem quibusdam</b> et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+						<blockquote style="color: red;"><i>Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id.</i></blockquote>
+						<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias <b>consequatur aut perferendis</b> doloribus asperiores repellat.</p>
+
+					</div>
+					<div id ="image_about_us">
+						<img src="img/1.jpg"></img>
+						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+						<p>Totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.</p>
+					</div>
+					
+					<div class="post_end"></div>
+					
+					<br><hr>
+					<div id="images_down_line">
+						<img src="img/1.jpg"></img>
+						<img src="img/2.jpg"></img>
+						<img src="img/3.jpg"></img>
+						<img src="img/4.jpg"></img>
+						<img src="img/5.jpg"></img>
+						<img src="img/6.jpg"></img>
+						<img src="img/1.jpg"></img>
+						<img src="img/2.jpg"></img>
+						<img src="img/3.jpg"></img>
+						<img src="img/4.jpg"></img>
+					</div>
+				</div>		
+			</div>
+	</div>
+
+
+	<footer id="bottom">
+		<div id="upper_footer_line">
+			<div id="upper_footer_menu">
+				<nav><a href="home.html" target="_self">Home</a> | <a href="information,html" target="_self">Information</a> | <a href="offer.html" target="_self">Offer</a> | <a href="#" target="_self">About Us</a></nav>
+			</div>
+			<div id="upper_footer_info">
+				+38 (0NN) NNN-NN-NN<br>
+				+38 (0NN) NNN-NN-NN<br>
+				+38 (057) NNN-NN-NN
+			</div>
+		</div>
+		<div id="lower_footer">Харьков 2013 г.</div>
+	</footer>
+
+<script>
+
+(function () {
+	$('img.image_offer').on('mouseenter',function() {
+		$(this).siblings('p.text_offer').fadeIn(200);
+		$(this).siblings('div.black_triangular').fadeIn(200);
+		$(this).siblings('div.blue_triangular').fadeIn(200);
+	});
+	$('img.image_offer').on('mouseleave',function() {
+		$(this).siblings('p.text_offer').fadeOut(200);
+		$(this).siblings('div.black_triangular').fadeOut(200);
+		$(this).siblings('div.blue_triangular').fadeOut(200);
+	});
+	
+		$('#upper_header_menu').fadeIn(500);
+		$('#lower_header_menu').fadeIn(1000)
+		.queue(function() {$('#list').fadeIn(2000)
+		.queue(function() {$('#bottom').slideDown(1000)
+		.queue(function() {$('#bottom').slideDown(1000);
+		});});});
+
+		$('#menu_square').siblings('.button1b').slideDown(200)
+		.queue(function() {$(this).siblings('.button2b').slideDown(200)
+		.queue(function() {$(this).siblings('.button3b').slideDown(200)
+		.queue(function() {$(this).siblings('.button4b').slideDown(200)
+		.queue(function() {$(this).siblings('.button5b').slideDown(200)
+		.queue(function() {$(this).siblings('.button6b').slideDown(200)
+		.queue(function() {$(this).siblings('.button7b').slideDown(200)
+		.queue(function() {$(this).siblings('.button8b').slideDown(200)
+		.queue(function() {$(this).siblings('.button9b').slideDown(200)
+		.queue(function() {$(this).siblings('.button10b').slideDown(200);
+		});});});});});});});});});
+})();
+
+</script>
+
+</body>
+</html>
